@@ -9310,7 +9310,6 @@
   function(e, t, n) {
     'use strict';
     function r() {
-      return true;
       navigator.hasOwnProperty('serviceWorker') &&
         'serviceWorker' in navigator &&
         window.addEventListener('load', function() {
