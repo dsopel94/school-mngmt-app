@@ -9311,7 +9311,8 @@
     'use strict';
     function r() {
       return true;
-      'serviceWorker' in navigator &&
+      navigator.hasOwnProperty('serviceWorker') &&
+        'serviceWorker' in navigator &&
         window.addEventListener('load', function() {
           navigator.serviceWorker
             .register('/school-mngmt-app/build/service-worker.js')
